@@ -103,12 +103,12 @@ footer .contact-info p {
   font-size: 14px;
   color: #aaa;
   margin: 3px 0;
-   justify-content: right;
+   text-align: left;
 }
 
 footer .socials {
   margin: 20px 0;
-   justify-content: left;
+   text-align: right;
 }
 
 footer .socials p {
