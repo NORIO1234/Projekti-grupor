@@ -1,0 +1,135 @@
+* {
+      margin: 30;
+      padding: 40;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      color: #000;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #333;
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+  margin-top: auto;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 1px solid #222;
+}
+
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+footer .footer-logo img {
+  height: 40px;
+   justify-content: center;
+  
+}
+
+footer .footer-logo h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+footer .slogan {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer .contact-info p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 3px 0;
+   text-align: left;
+}
+
+footer .socials {
+  margin: 20px 0;
+   text-align: right;
+}
+
+footer .socials p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+footer .socials a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+footer .socials a:hover {
+  transform: scale(1.1);
+}
+
+footer .copyright {
+  font-size: 13px;
+  color: #777;
+  margin-top: 15px;
+  line-height: 1.6;
+}
