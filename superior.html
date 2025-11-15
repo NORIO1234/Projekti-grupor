@@ -1,28 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rooms</title>
+  <title>Dhoma Superiore</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <p>Dhoma jonë superiore ofron menaxhim efikas të hapësirës, ​​pajisje moderne, shtrat të rehatshëm dhe dekor bashkëkohor!</p>
-    <br>
-    <p>Pajisjet e Dhomës
-Rroba banjoje
-Banjo me vaska të dhe kabinë dushi
-TV kabllor
-Tharëse flokësh
-Ujë i ngrohtë dhe i ftohtë
-Kontroll i kontrollit në dhomë
-Kuti sigurie në dhomë
-TV me ekran të gjerë
-Dhoma të ndërlidhura me kërkesë
-Wifi falas
-Pantofla
-Frigoriferë dhe minibare</p>
+  
+  <style>
+    body {
+        background-image: url('https://www.emeraldhotel.com/images/rooms/superior/slide-01.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        margin: 0; 
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    .content-wrapper {
+        background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2 {
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .room-description {
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        color: #f1f1f1;
+    }
+
+    .room-details ul {
+        list-style-type: none;
+        padding-left: 0;
+        color: #f1f1f1;
+    }
+
+    .room-details ul li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .room-details ul li::before {
+        content: "\2022";
+        color: #ffbc00; /* Golden color for bullet points */
+        margin-right: 10px;
+    }
+
+    .btn-book-now {
+        background-color: #ffbc00;
+        color: #000;
+        font-size: 1.1rem;
+        padding: 12px 30px;
+        border-radius: 30px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .btn-book-now:hover {
+        background-color: #e68a00;
+        transform: translateY(-5px);
+    }
+
+    .btn-book-now:focus {
+        outline: none;
+    }
+
+    .room-image {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .btn-explore-other-rooms {
+        background-color: transparent;
+        color: #ffbc00;
+        font-size: 1.1rem;
+        padding: 12px 30px;
+        border: 2px solid #ffbc00;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .btn-explore-other-rooms:hover {
+        background-color: #ffbc00;
+        color: #000;
+        transform: translateY(-5px);
+    }
+
+    .btn-explore-other-rooms:focus {
+        outline: none;
+    }
+
+    .explore-section {
+        text-align: center;
+        margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main Content Wrapper -->
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="content-wrapper">
+      <!-- Room Title -->
+      <h1 class="text-center mb-4">Dhoma Superiore</h1>
+
+      <!-- Room Image (Optional: Add a larger image or a gallery) -->
+      <img src="https://www.emeraldhotel.com/images/rooms/superior/slide-01.jpg" alt="Dhoma Superiore" class="room-image">
+
+      <!-- Room Description -->
+      <p class="room-description">Dhoma jonë Superiore ofron menaxhim efikas të hapësirës, pajisje moderne, shtroje të rehatshme dhe dekor bashkëkohor për një qëndrim relaksues dhe produktiv. Shijoni ekuilibrin e përsosur të stilit dhe komoditetit në një ambient të hapur dhe të qetë.</p>
+
+      <!-- Room Details -->
+      <div class="room-details mt-4">
+        <h2>Amenities:</h2>
+        <ul>
+          <li>Banjo private me vaskë dhe kabinë dushi</li>
+          <li>TV kabllor me ekran të sheshtë</li>
+          <li>Fshesë flokësh</li>
+          <li>Ujë i ngrohtë dhe i ftohtë</li>
+          <li>Kontrolli i klimës në dhomë</li>
+          <li>Kasa personale në dhomë</li>
+          <li>Wi-Fi falas</li>
+          <li>Këpucë komode</li>
+          <li>Frigorifer mini-bar</li>
+          <li>Dhomë të lidhura mund të kërkohen në kërkesë</li>
+        </ul>
+      </div>
+
+      <!-- Book Now Button -->
+      <div class="text-center">
+        <a href="rezervimi.html" class="btn-book-now">Rezervo Tani</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Other Rooms Section -->
+  <div class="explore-section">
+    <h2 style="color: #fff; font-weight: bold;">Eksploro Dhomat Tjera</h2>
+    <a href="rooms.html" class="btn-explore-other-rooms">Shiko Dhoma Të Tjera</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

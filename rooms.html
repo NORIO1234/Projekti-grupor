@@ -1,127 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rooms</title>
+  <title>Dhoma Jonë</title>
+  <link rel="stylesheet" href="rooms.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+   
+    body {
+      background: #f0f8ff; 
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #005b96;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .section-title p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #ffffff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 230px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card-img-top:hover {
+      transform: scale(1.1);
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Button-like style for the links */
+    .card-link {
+      font-weight: 600;
+      color: #fff; /* White text */
+      background-color: #000; /* Black background */
+      padding: 10px 20px; /* Padding for button-like appearance */
+      border-radius: 5px; /* Rounded corners */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Ensure it behaves like a block-level element */
+      text-align: center; /* Center text inside the button */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .card-link:hover {
+      background-color: #333; /* Darker background when hovered */
+      text-decoration: none; /* Keep text unlined on hover */
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    @media (max-width: 767px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .card-title {
+        font-size: 1.2rem;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container my-5">
+<div class="container">
+
+  <div class="section-title">
+    <h2>Dhoma Jonë</h2>
+    <p>Eksploroni dhomat dhe suitat tona luksoze, secila e dizajnuar për t'ju ofruar rehati dhe relaksim maksimal.</p>
+  </div>
+
   <div class="row g-4">
-    <!-- Card 1 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="supwerior room.jfif" class="card-img-top" alt="...">
+        <img src="supwerior room.jfif" class="card-img-top" alt="Dhoma Superiore">
         <div class="card-body">
-          <h5 class="card-title">Superior Room</h5>
-          <p class="card-text">Dhoma jonë superiore ofron menaxhim të efektshëm të hapësirës, pajisje moderne, shtroje të rehatshme dhe dekorim bashkëkohor!</p>
+          <h5 class="card-title">Dhoma Superiore</h5>
+          <p class="card-text">Dhoma jonë Superiore ofron menaxhim efikas të hapësirës, pajisje moderne, shtroje të rehatshme dhe dekor bashkëkohor për një qëndrim relaksues.</p>
         </div>
-       
         <div class="card-body">
-          <a href="superior.html" class="card-link">VIEW ROOM DETAILS</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="superior.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 2 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="deluxe room.jfif" class="card-img-top" alt="...">
+        <img src="deluxe room.jfif" class="card-img-top" alt="Dhoma Deluxe">
         <div class="card-body">
-          <h5 class="card-title">Deluxe Room</h5>
-          <p class="card-text">Me 40 m² hapësirë elegante dhe pamje nga qyteti, dhomat tona Deluxe janë dizajnuar me mobilim luksoz dhe janë dekoruar me shije në ngjyra të buta …</p>
+          <h5 class="card-title">Dhoma Deluxe</h5>
+          <p class="card-text">Me 40 m² hapësirë elegante dhe pamje nga qyteti, dhomat tona Deluxe janë dizajnuar me mobilim luksoz dhe ngjyra të buta që ofrojnë relaksim maksimal.</p>
         </div>
-       
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="deluxe.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 3 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="grand deluxe room.jfif" class="card-img-top" alt="...">
+        <img src="grand deluxe room.jfif" class="card-img-top" alt="Dhoma Grand Deluxe">
         <div class="card-body">
-          <h5 class="card-title">Grand Deluxe Room</h5>
-          <p class="card-text">Të vendosura në katin më të lartë, të 26-të, të hotelit "Emerald Bangkok", dhomat tona të gjera "Grand Deluxe" (40 m²) ofrojnë pamje mahnitëse të…</p>
+          <h5 class="card-title">Dhoma Grand Deluxe</h5>
+          <p class="card-text">Të vendosura në katin më të lartë, dhomat tona "Grand Deluxe" (40 m²) ofrojnë pamje mahnitëse të qytetit dhe një përvojë luksoze që nuk duhet humbur.</p>
         </div>
-       
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="grand-deluxe.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container my-5">
   <div class="row g-4">
-    <!-- Card 1 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="Deluxe Triple Room.jpg" class="card-img-top" alt="...">
+        <img src="Deluxe Triple Room.jpg" class="card-img-top" alt="Dhoma Deluxe Triple">
         <div class="card-body">
-          <h5 class="card-title">Deluxe Triple Room</h5>
-          <p class="card-text">Për ata që kërkojnë hapësirë ​​shtesë me 90 m², Suitat Ekzekutive me një dhomë gjumi janë të pajisura me një ambient luksoz të mobiluar dhe të dekoruar me shije…</p>
+          <h5 class="card-title">Dhoma Deluxe Triple</h5>
+          <p class="card-text">Me 90 m² hapësirë, dhomat tona Deluxe Triple ofrojnë mobilim luksoz dhe dekor modern, perfekte për familje ose grupe.</p>
         </div>
-
-      
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="deluxe-triple.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 2 -->
     <div class="col-md-4">
       <div class="card">
-        <img src="Family Room.jpg" class="card-img-top" alt="...">
+        <img src="Family Room.jpg" class="card-img-top" alt="Dhoma Familjare">
         <div class="card-body">
-          <h5 class="card-title">Family Room</h5>
-          <p class="card-text">Dhomat tona familjare janë të projektuara posaçërisht në mënyrë që ju të mund të shijoni pushimet tuaja ndërsa kaloni kohë cilësore me fëmijët tuaj.
-Çdo dhomë familjare është e pajisur me të gjitha…</p>
+          <h5 class="card-title">Dhoma Familjare</h5>
+          <p class="card-text">Dhomat tona familjare janë të dizajnuara për t'ju ofruar mundësinë të kaloni kohë cilësore me familjen tuaj, me shumë hapësirë dhe komoditet.</p>
         </div>
-        
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="family-room.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 3 -->
+    <!-- Executive Suite Card -->
     <div class="col-md-4">
       <div class="card">
-        <img src="slide-01.jpg" class="card-img-top" alt="...">
+        <img src="slide-01.jpg" class="card-img-top" alt="Executive Suite">
         <div class="card-body">
-          <h5 class="card-title">Executive Suite</h5>
-          <p class="card-text">Për ata që kërkojnë hapësirë ​​shtesë me 90 m², Suitat Ekzekutive me një dhomë gjumi janë të pajisura me një ambient luksoz të mobiluar dhe të dekoruar me shije…</p>
+          <h5 class="card-title">Suite Ekzekutiv</h5>
+          <p class="card-text">Për ata që kërkojnë hapësirë shtesë me 90 m², Suite Ekzekutiv ofron një ambient luksoz dhe komod për një qëndrim të paharrueshëm.</p>
         </div>
-
         <div class="card-body">
-          <a href="#" class="View room details">View room details</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="executive-suite.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
 
-    <!-- Card 4 (në rresht të veçantë) -->
+    <!-- Emerald Suite Card -->
     <div class="col-md-4 mx-auto">
       <div class="card">
-        <img src="emerald suite.jpg" class="card-img-top" alt="...">
+        <img src="emerald suite.jpg" class="card-img-top" alt="Emerald Suite">
         <div class="card-body">
           <h5 class="card-title">Emerald Suite</h5>
-          <p class="card-text">Ndihuni si në shtëpinë tuaj në Suitën tonë Emerald me një dhomë gjumi, e cila ofron një suitë luksoze tepër të bollshme me komoditete relaksuese dhe elegancë tradicionale…</p>
+          <p class="card-text">Ndihuni si në shtëpinë tuaj në Suitën tonë Emerald, një suitë luksoze dhe komode me pamje fantastike dhe ambiente relaksuese.</p>
         </div>
-        
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <a href="emerald-suite.html" class="card-link">Shiko Dhomën</a>
+          <a href="rezervimi.html" class="card-link">Rezervo Tani</a>
         </div>
       </div>
     </div>
