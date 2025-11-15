@@ -1,11 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rezervime | Hotel SHAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="rezervimi.css">
 </head>
 <body>
-    
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="logo (2).png" alt="Shah Hotel Logo">
+            <h1>Hotel SHAH</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Kryefaqja</a>
+            <a href="rooms.html">Dhomat</a>
+            <a href="about.html">Rreth Nesh</a>
+            <a href="rezervimi.html" class="active">Rezervime</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="reservation-hero">
+        <div class="hero-content">
+            <h1>Rezervoni Qëndrimin Tuaj</h1>
+            <p>Përjetoni luksin dhe rehatinë në hotelin tonë me pamje të bukur</p>
+        </div>
+    </section>
+
+    <!-- Reservation Process -->
+    <section class="reservation-process">
+        <div class="container">
+            <h2>Procesi i Rezervimit</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Zgjidhni Datat</h3>
+                    <p>Përzgjidhni datën e ardhjes dhe të largimit</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Zgjidhni Dhomat</h3>
+                    <p>Zgjidhni llojin e dhomës që ju përshtatet</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Plotësoni Të Dhënat</h3>
+                    <p>Jepni informacionet tuaja personale</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Konfirmimi</h3>
+                    <p>Prisni konfirmimin e rezervimit tuaj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-form-section">
+        <div class="container">
+            <h2>Bëni Rezervimin Tuaj</h2>
+            <p class="section-subtitle">Plotësoni formularin më poshtë për të rezervuar dhomën tuaj të ëndrrave</p>
+            
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-section">
+                    <h3>Detajet e Rezervimit</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Data e Check-in</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Data e Check-out</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Të rritur</label>
+                            <select id="adults" name="adults" required>
+                                <option value="1">1 i rritur</option>
+                                <option value="2" selected>2 të rritur</option>
+                                <option value="3">3 të rritur</option>
+                                <option value="4">4 të rritur</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Fëmijë</label>
+                            <select id="children" name="children">
+                                <option value="0" selected>Pa fëmijë</option>
+                                <option value="1">1 fëmijë</option>
+                                <option value="2">2 fëmijë</option>
+                                <option value="3">3 fëmijë</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="roomType">Lloji i Dhomës</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="" disabled selected>Zgjidhni llojin e dhomës</option>
+                            <option value="standard">Dhomë Standard - €89/natë</option>
+                            <option value="deluxe">Dhomë Deluxe - €129/natë</option>
+                            <option value="suite">Suite - €199/natë</option>
+                            <option value="presidential">Suite Presidentiale - €299/natë</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Të Dhënat Personale</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Emri</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Mbiemri</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Kërkesa të Veçanta</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Keni ndonjë kërkesë të veçantë? (dietë, lule, festë, etj.)"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Informacione Pagese</h3>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" id="payAtHotel" name="payment" value="hotel" checked>
+                            <label for="payAtHotel">Pagesë në Hotel</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="creditCard" name="payment" value="card">
+                            <label for="creditCard">Kartë Krediti</label>
+                        </div>
+                    </div>
+                    
+                    <div class="terms-agreement">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Unë pranoj <a href="#">kushtet dhe kushtet</a> e rezervimit</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Rezervo Tani</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Room Preview -->
+    <section class="room-preview">
+        <div class="container">
+            <h2>Dhomat Tona</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dhomë Standard">
+                    </div>
+                    <div class="preview-info">
+                        <h3>Dhomë Standard</h3>
+                        <p class="price">€89 <span>/natë</span></p>
+                        <ul>
+                            <li>≤ 2 Persona</li>
+                            <li>30 m²</li>
+                            <li>Banjë private</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dhomë Deluxe">
+                    </div>
+                    <div class="preview-info">
+                        <h3>Dhomë Deluxe</h3>
+                        <p class="price">€129 <span>/natë</span></p>
+                        <ul>
+                            <li>≤ 3 Persona</li>
+                            <li>45 m²</li>
+                            <li>Pamje nga qyteti</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Suite">
+                    </div>
+                    <div class="preview-info">
+                        <h3>Suite</h3>
+                        <p class="price">€199 <span>/natë</span></p>
+                        <ul>
+                            <li>≤ 4 Persona</li>
+                            <li>60 m²</li>
+                            <li>Ballkon privat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Pyetje të Shpeshta</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Kur mund të bëj check-in dhe check-out?</h3>
+                    <p>Check-in: Pas orës 14:00<br>Check-out: Para orës 12:00</p>
+                </div>
+                <div class="faq-item">
+                    <h3>A pranohen kafshët shtëpiake?</h3>
+                    <p>Po, kafshët shtëpiake të vogla janë të pranueshme me një tarifë shtesë.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>A ka parking në hotel?</h3>
+                    <p>Po, ofrojmë parking të sigurt dhe falas për të gjithë mysafirët.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Cila është politika e anulimit?</h3>
+                    <p>Anulime falas deri në 24 orë para datës së check-in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefon</h3>
+                    <p>+355 123 456 789</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>rezervime@hotelshah.al</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Orari i Punës</h3>
+                    <p>24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hotel SHAH</h3>
+                    <p>Një përvojë unike e akomodimit ku çdo detaj është i menduar për rehatinë tuaj.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Lidhje të Shpejta</h3>
+                    <ul>
+                        <li><a href="index.html">Kryefaqja</a></li>
+                        <li><a href="rooms.html">Dhomat</a></li>
+                        <li><a href="about.html">Rreth Nesh</a></li>
+                        <li><a href="reservation.html">Rezervime</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Na Kontaktoni</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Bulevardi i Palmave, Durrës</li>
+                        <li><i class="fas fa-phone"></i> +355 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@hotelshah.al</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hotel SHAH. Të gjitha të drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="rezervimi.js"></script>
 </body>
 </html>
