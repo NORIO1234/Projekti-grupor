@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhoma Superiore</title>
+  <title>Emerald Suite</title>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <style>
     body {
-        background-image: url('https://www.emeraldhotel.com/images/rooms/superior/slide-01.jpg');
+        background-image: url('https://www.emeraldhotel.com/images/rooms/emerald-suite/slide-01.jpg');
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -18,24 +19,24 @@
     }
 
     .content-wrapper {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.65);
         padding: 40px;
         border-radius: 12px;
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     }
 
     h1, h2 {
         font-weight: bold;
         color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     }
 
     .room-description {
         line-height: 1.8;
         font-size: 1.1rem;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         color: #f1f1f1;
     }
 
@@ -46,18 +47,18 @@
     }
 
     .room-details ul li {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         font-size: 1.1rem;
     }
 
     .room-details ul li::before {
         content: "\2022";
-        color: #ffbc00; 
+        color: #00e676; 
         margin-right: 10px;
     }
 
     .btn-book-now {
-        background-color: #ffbc00;
+        background-color: #00e676;
         color: #000;
         font-size: 1.1rem;
         padding: 12px 30px;
@@ -66,49 +67,41 @@
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 1px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        transition: 0.3s ease;
         display: inline-block;
         margin-top: 20px;
     }
 
     .btn-book-now:hover {
-        background-color: #e68a00;
-        transform: translateY(-5px);
-    }
-
-    .btn-book-now:focus {
-        outline: none;
-    }
-
-    .room-image {
-        max-width: 100%;
-        border-radius: 10px;
-        margin-bottom: 30px;
+        background-color: #00c864;
+        transform: translateY(-4px);
     }
 
     .btn-explore-other-rooms {
         background-color: transparent;
-        color: #ffbc00;
+        color: #00e676;
         font-size: 1.1rem;
         padding: 12px 30px;
-        border: 2px solid #ffbc00;
+        border: 2px solid #00e676;
         border-radius: 30px;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 1px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        transition: 0.3s ease;
         display: inline-block;
         margin-top: 20px;
     }
 
     .btn-explore-other-rooms:hover {
-        background-color: #ffbc00;
+        background-color: #00e676;
         color: #000;
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
 
-    .btn-explore-other-rooms:focus {
-        outline: none;
+    .room-image {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-bottom: 30px;
     }
 
     .explore-section {
@@ -120,29 +113,38 @@
 
 <body>
 
-
   <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="content-wrapper">
+     
+      <h1 class="text-center mb-4">Emerald Suite</h1>
 
-      <h1 class="text-center mb-4">Dhoma Superiore</h1>
+      <img src="https://www.emeraldhotel.com/images/rooms/emerald-suite/slide-01.jpg" 
+           alt="Emerald Suite" class="room-image">
 
-      <img src="https://www.emeraldhotel.com/images/rooms/superior/slide-01.jpg" alt="Dhoma Superiore" class="room-image">
+      <p class="room-description">
+        Emerald Suite është perla e akomodimit tonë, e dizajnuar për ata që kërkojnë luks të pastër,
+        elegancë të përkryer dhe privatësi maksimale.  
+        Suita ofron një përvojë të jashtëzakonshme me hapësirë të bollshme, dizajn modern, detaje premium 
+        dhe pamje mahnitëse. E ndarë në disa zona funksionale, Emerald Suite është ideale për pushime romantike,
+        udhëtime biznesi, ose qëndrime afatgjata me komoditet të klasit të lartë.
+      </p>
 
-      <p class="room-description">Dhoma jonë Superiore ofron menaxhim efikas të hapësirës, pajisje moderne, shtroje të rehatshme dhe dekor bashkëkohor për një qëndrim relaksues dhe produktiv. Shijoni ekuilibrin e përsosur të stilit dhe komoditetit në një ambient të hapur dhe të qetë.</p>
-
+  
       <div class="room-details mt-4">
         <h2>Amenities:</h2>
         <ul>
-          <li>Banjo private me vaskë dhe kabinë dushi</li>
-          <li>TV kabllor me ekran të sheshtë</li>
-          <li>Fshesë flokësh</li>
-          <li>Ujë i ngrohtë dhe i ftohtë</li>
-          <li>Kontrolli i klimës në dhomë</li>
-          <li>Kasa personale në dhomë</li>
-          <li>Wi-Fi falas</li>
-          <li>Këpucë komode</li>
-          <li>Frigorifer mini-bar</li>
-          <li>Dhomë të lidhura mund të kërkohen në kërkesë</li>
+          <li>Sallon i madh i ndarë nga dhoma e gjumit</li>
+          <li>Krevat King Size me shtroje luksoze</li>
+          <li>Banjo ekskluzive me vaskë të madhe + dush walk-in</li>
+          <li>Dy televizione UHD Smart 55"</li>
+          <li>Mini-bar premium dhe makinë profesionale Espresso</li>
+          <li>Tavolinë pune executive</li>
+          <li>Ballkon ose pamje panoramike (varësisht dhomës)</li>
+          <li>Klimë inteligjente me kontroll zonal</li>
+          <li>Wi-Fi ultra i shpejtë</li>
+          <li>Rrobe-bërrylë, pantofla premium dhe set luksoz higjiene</li>
+          <li>Shërbim në dhomë 24 orë</li>
+          <li>Kasa elektronike e sigurisë</li>
         </ul>
       </div>
 
@@ -157,6 +159,8 @@
     <a href="rooms.html" class="btn-explore-other-rooms">Shiko Dhoma Të Tjera</a>
   </div>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
