@@ -1,0 +1,438 @@
+/* rezervimi.css - Vetëm për body dhe seksionet e rezervimit */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #8B4513;   /* Kafe e errët/elegante */
+    --secondary: #D4AF37; /* Ari/llustrues */
+    --accent: #FFFFFF;    /* Bardhë */
+    --light: #F5F5F5;     /* Gri shumë i çelët */
+    --dark: #333333;      /* Gri të errët */
+    --gray: #666666;      /* Gri mesatar */
+}
+
+body {
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+    padding-top: 80px; /* Lartësia e nav-it */
+}
+
+/* Hero Section */
+.reservation-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    margin-top: 20px; /* Kompensim për padding të body */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reservation-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reservation-hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Reservation Form Section */
+.reservation-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--secondary);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title p {
+    color: var(--gray);
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+/* Form Container */
+.reservation-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.1);
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    cursor: pointer;
+}
+
+/* Room Selection */
+.room-selection {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.room-selection h3 {
+    margin-bottom: 25px;
+    color: var(--primary);
+    font-size: 22px;
+    text-align: center;
+}
+
+.room-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.room-option {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+.room-option:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room-option.selected {
+    border-color: var(--primary);
+    background-color: rgba(139, 69, 19, 0.05);
+    position: relative;
+}
+
+.room-option.selected::before {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.room-option h4 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.room-price {
+    color: var(--secondary);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.room-price::before {
+    content: 'Preçi: ';
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: normal;
+}
+
+.room-features {
+    list-style: none;
+    margin: 15px 0;
+    font-size: 14px;
+    color: var(--gray);
+    text-align: left;
+    padding-left: 0;
+}
+
+.room-features li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.room-features li i {
+    color: var(--secondary);
+    margin-right: 10px;
+    min-width: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #6B3410;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .reservation-hero h1 {
+        font-size: 36px;
+    }
+    
+    .reservation-hero p {
+        font-size: 18px;
+    }
+    
+    .section-title h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reservation-form-container {
+        padding: 25px 20px;
+    }
+    
+    .room-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .room-selection {
+        padding: 15px;
+    }
+    
+    .reservation-hero {
+        min-height: 40vh;
+        padding: 60px 0;
+        margin-top: 0;
+    }
+    
+    .reservation-section {
+        padding: 50px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+    
+    .room-option {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .reservation-hero h1 {
+        font-size: 32px;
+    }
+    
+    .reservation-hero p {
+        font-size: 16px;
+    }
+    
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+    }
+    
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Input states */
+.form-control:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #e74c3c;
+}
+
+.form-control:valid:not(:focus):not(:placeholder-shown) {
+    border-color: #27ae60;
+}
+
+/* Date input styling */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}
+
+::-ms-input-placeholder {
+    color: #999;
+}
+
+/* Focus states for all form elements */
+.form-control:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+/* Special requests textarea */
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* Required field indicator */
+.form-group label[for]:after {
+    content: " *";
+    color: #e74c3c;
+}
+
+.form-group label[for="children"]:after,
+.form-group label[for="specialRequests"]:after {
+    content: "";
+}
