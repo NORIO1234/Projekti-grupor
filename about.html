@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezervime | Hotel SHAH</title>
+    <title>Rreth Nesh | Hotel SHAH</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
@@ -17,8 +18,8 @@
         <div class="nav-links">
             <a href="index.html">Kryefaqja</a>
             <a href="rooms.html">Dhomat</a>
-            <a href="about.html">Rreth Nesh</a>
-            <a href="rezervimi.html" class="active">Rezervime</a>
+            <a href="about.html" class="active">Rreth Nesh</a>
+            <a href="rezervimi.html">Rezervime</a>
             <a href="contact.html">Kontakt</a>
         </div>
         <div class="hamburger">
@@ -28,108 +29,142 @@
         </div>
     </nav>
 
-
-  <header class="hero">
-    <div class="overlay">
-      <h1>Mirë se vini në Hotelin SHAH</h1>
-      <p>Një vend ku qetësia, komoditeti dhe buzëqeshja janë pjesë e përditshmërisë sonë.</p>
-    </div>
-  </header>
-
-  <section class="about">
-    <h2>Historia Jonë</h2>
-    <p>
-      Hoteli SHAH filloi si një shtëpi e vogël pritjeje në vitin 2002, e drejtuar nga familja jonë me shumë dashuri dhe përkushtim.
-      Sot, pas më shumë se dy dekadash, ne vazhdojmë të mirëpresim miq nga e gjithë bota me të njëjtën ngrohtësi si në ditën e parë.
-      Çdo vizitor është pjesë e historisë sonë.
-    </p>
-  </section>
-
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-5">Pse të Zgjidhni Hotelin SHAH?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="fas fa-wifi fa-3x text-primary"></i>
-              </div>
-              <h5 class="card-title">WiFi Falas</h5>
-              <p class="card-text">Qasje e shpejtë dhe e pandërprerë në internet në të gjithë hotelin.</p>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Mirë se vini në Hotelin SHAH</h1>
+            <p>Një vend ku qetësia, komoditeti dhe buzëqeshja janë pjesë e përditshmërisë sonë.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="fas fa-swimming-pool fa-3x text-primary"></i>
-              </div>
-              <h5 class="card-title">Pishinë Premium</h5>
-              <p class="card-text">Pishinë e jashtme me pamje të bukur dhe zonë relaksuese.</p>
-            </div>
-          </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Historia Jonë</h2>
+            <div class="underline"></div>
+            <p>
+                Hoteli SHAH filloi si një shtëpi e vogël pritjeje në vitin 2002, e drejtuar nga familja jonë me shumë dashuri dhe përkushtim.
+                Sot, pas më shumë se dy dekadash, ne vazhdojmë të mirëpresim miq nga e gjithë bota me të njëjtën ngrohtësi si në ditën e parë.
+                Çdo vizitor është pjesë e historisë sonë.
+            </p>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body text-center p-4">
-              <div class="mb-3">
-                <i class="fas fa-utensils fa-3x text-primary"></i>
-              </div>
-              <h5 class="card-title">Restorant me Kuzhinë Tradicionale</h5>
-              <p class="card-text">Shijoni specialitete lokale dhe ndërkombëtare në ambientet tona elegante.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Pse të Zgjidhni Hotelin SHAH?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-wifi fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">WiFi Falas</h5>
+                            <p class="card-text">Qasje e shpejtë dhe e pandërprerë në internet në të gjithë hotelin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-swimming-pool fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">Pishinë Premium</h5>
+                            <p class="card-text">Pishinë e jashtme me pamje të bukur dhe zonë relaksuese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-utensils fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">Restorant me Kuzhinë Tradicionale</h5>
+                            <p class="card-text">Shijoni specialitete lokale dhe ndërkombëtare në ambientet tona elegante.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="values">
-    <h2>Çfarë Na Frymëzon</h2>
-    <div class="values-container">
-      <div class="value">
-        <h3>Mikpritje me Zemër</h3>
-        <p>Ne besojmë se mikpritja e vërtetë fillon me një buzëqeshje dhe kujdes të sinqertë për çdo mysafir.</p>
-      </div>
-      <div class="value">
-        <h3>Komoditet dhe Cilësi</h3>
-        <p>Çdo dhomë është menduar për pushim të plotë dhe rehati – një vend ku ndihesh si në shtëpi.</p>
-      </div>
-      <div class="value">
-        <h3>Respekt për Natyrën</h3>
-        <p>Ne përdorim energji të pastër dhe përkujdesje për mjedisin, sepse bukuria e vendit tonë është frymëzimi ynë.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2>Çfarë Na Frymëzon</h2>
+            <div class="underline"></div>
+            <div class="values-container">
+                <div class="value">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mikpritje me Zemër</h3>
+                    <p>Ne besojmë se mikpritja e vërtetë fillon me një buzëqeshje dhe kujdes të sinqertë për çdo mysafir.</p>
+                </div>
+                <div class="value">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Komoditet dhe Cilësi</h3>
+                    <p>Çdo dhomë është menduar për pushim të plotë dhe rehati – një vend ku ndihesh si në shtëpi.</p>
+                </div>
+                <div class="value">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Respekt për Natyrën</h3>
+                    <p>Ne përdorim energji të pastër dhe përkujdesje për mjedisin, sepse bukuria e vendit tonë është frymëzimi ynë.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="ekipi">
-    <h2>Njerëzit Pas Hotelit</h2>
-    <div class="team-container">
-      <div class="pjestar">
-        <img src="Haris.jpg" alt="Haris Mustafa">
-        <h3>Haris Mustafa</h3>
-        <p>Menaxher i Përgjithshëm</p>
-        <small>“Çdo mysafir duhet të largohet me kujtime të bukura dhe dëshirën për t'u kthyer sërish.”</small>
-      </div>
-      <div class="pjestar">
-        <img src="Shuajb.jpg" alt="Shuajb Beluli">
-        <h3>Shuajb Beluli</h3>
-        <p>Shef i Kuzhines</p>
-        <small>“Sekreti i çdo vakti të mirë është dashuria me të cilën gatuhet.”</small>
-      </div>
-      <div class="pjestar">
-        <img src="Albnor.jpg" alt="Albnor Mramori">
-        <h3>Albnor Mramori</h3>
-        <p>Menaxher i marketingut</p>
-        <small>Ndërsa trendet e turizmit dhe udhëtimeve evoluojnë, kërkesa për mendje krijuese që mund të promovojnë, rrisin dhe mbrojnë imazhin e markës së hotelit tonë rritet gjithnjë e më shumë.</small>
-      </div>
-    </div>
-  </section>
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2>Njerëzit Pas Hotelit</h2>
+            <div class="underline"></div>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="Haris.jpg" alt="Haris Mustafa">
+                    </div>
+                    <div class="member-info">
+                        <h3>Haris Mustafa</h3>
+                        <p class="position">Menaxher i Përgjithshëm</p>
+                        <p class="quote">"Çdo mysafir duhet të largohet me kujtime të bukura dhe dëshirën për t'u kthyer sërish."</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="Shuajb.jpg" alt="Shuajb Beluli">
+                    </div>
+                    <div class="member-info">
+                        <h3>Shuajb Beluli</h3>
+                        <p class="position">Shef i Kuzhinës</p>
+                        <p class="quote">"Sekreti i çdo vakti të mirë është dashuria me të cilën gatuhet."</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="Albnor.jpg" alt="Albnor Mramori">
+                    </div>
+                    <div class="member-info">
+                        <h3>Albnor Mramori</h3>
+                        <p class="position">Menaxher i Marketingut</p>
+                        <p class="quote">"Ndërsa trendet e turizmit evoluojnë, ne vazhdojmë të promovojmë dhe mbrojmë imazhin e hotelit tonë me mendje krijuese."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-  
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -150,7 +185,7 @@
                         <li><a href="index.html">Kryefaqja</a></li>
                         <li><a href="rooms.html">Dhomat</a></li>
                         <li><a href="about.html">Rreth Nesh</a></li>
-                        <li><a href="reservation.html">Rezervime</a></li>
+                        <li><a href="rezervimi.html">Rezervime</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -171,6 +206,7 @@
         </div>
     </footer>
 
-    <script src="rezervimi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>
